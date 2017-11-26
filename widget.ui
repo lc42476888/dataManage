@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>西瓜皮管理系统登录</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="datamanageresource.qrc">
+    <normaloff>:/image/DataManage.png</normaloff>:/image/DataManage.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame
+{
+background-image: url(:/image/backgroundXigua.png);
+}
+QComboBox::down-arrow 
+{
+    image: url(:/image/arrow-down.png);
+}
+ QComboBox:editable {
+      background: white;
+  }
+ QComboBox:!editable, QComboBox::drop-down:editable {
+       background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                   stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                   stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+  }
+ 
+  /* QComboBox gets the &quot;on&quot; state when the popup is open */
+  QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                  stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+  }
+
+QPushButton{
+/*背景色*/
+background-color: rgba(100, 225, 100, 30);
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 4px;
+/*边框圆角半径*/
+border-radius: 10px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: bold 14px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}
+
+/*鼠标悬停在按钮上时*/
+QPushButton:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 225, 255, 200);
+color:rgba(0, 0, 0, 200);
+}
+
+/*按钮被按下时*/
+QPushButton:pressed {
+background-color:rgba(100,255,100, 200);
+border-color: rgba(255, 225, 255, 30);
+border-style: inset;
+color:rgba(0, 0, 0, 100);
+}
+
+QWidget#Widget
+{
+background-image: url(:/image/beijing01.png);
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>本地数据库系统管理平台</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="userLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Adobe Arabic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>root</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>160</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;仿宋&quot;;</string>
+    </property>
+    <property name="text">
+     <string>密 码：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pwLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Adobe Arabic&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Adobe Arabic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>数据库类型</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;仿宋&quot;;</string>
+    </property>
+    <property name="text">
+     <string>用 户：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelPushButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>240</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginPushButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>240</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="databaseDriversComboBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Times New Roman&quot;;
+
+</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::InsertAlphabetically</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>userLineEdit</tabstop>
+  <tabstop>pwLineEdit</tabstop>
+  <tabstop>loginPushButton</tabstop>
+  <tabstop>cancelPushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="datamanageresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

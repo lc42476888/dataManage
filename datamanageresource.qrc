@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>DataManage.png</file>
+        <file>backgroundXigua.png</file>
+        <file>beijing01.png</file>
+        <file>beijing02.png</file>
+        <file>arrow-down.png</file>
+        <file>DataManage.ico</file>
+    </qresource>
+    <qresource prefix="/qss"/>
+</RCC>
